@@ -1,0 +1,76 @@
+nav li {
+  display:  block;
+  width:    80px;
+  float:    left;
+}
+
+nav a {
+  color: #fff;
+  background: url(hoshi.png)repeat-x bottom;
+  font-weight:bold;
+  display: block;
+  line-height:  1.0;
+  padding:    6px 0;
+  border-left:  1px solid #fff;
+  text-align:center;
+  text-decoration:none;
+}
+
+nav #current a {
+  color:  lemonchiffon;
+  background: midnightblue;
+}
+
+nav a:hover {
+  background: url(iro.png) repeat-x bottom;
+}
+
+body {
+    background-image: url("haikei.png");
+    color: #fff;
+    
+}
+
+#logo {
+  width: 800px;
+  height: 380px;
+}
+
+#miyagi {
+  width: 150px;
+  height: 150px;
+}
+
+#listen{
+  width: 150px;
+  height: 150px;
+}
+
+h2 {
+  border-width: 2px 2px 2px 5px;  
+  border-style: solid;
+  background-color:darkslategray;        
+  border-color: lightyellow;       
+  border-left: 15px solid lemonchiffon;  
+
+}
+
+h3 {
+  border-width: 2px 2px 3px 4px;  
+  border-style: dotted; 
+  background-color:#000080; 
+  border-color: aliceblue;       
+  border-left: 10px solid lightblue; 
+}
+
+#page {
+  margin: 0 auto;
+  width: 900px;
+}
+#main {
+  float: left;
+  width: 900px;
+}
+footer {
+  clear: both;
+}
