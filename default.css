@@ -46,6 +46,21 @@ body {
   height: 150px;
 }
 
+#seikai{
+  width: 900px;
+  height: 500px;
+}
+
+#batu{
+  width: 200px;
+  height: 200px; 
+}
+
+#sankaku{
+  width: 200px;
+  height: 200px; 
+}
+
 h2 {
   border-width: 2px 2px 2px 5px;  
   border-style: solid;
@@ -61,6 +76,12 @@ h3 {
   background-color:#000080; 
   border-color: aliceblue;       
   border-left: 10px solid lightblue; 
+}
+
+h4 {
+    border: dotted 2px lightyellow;
+    background-color: midnightblue;
+    padding: 10px;
 }
 
 #page {
