@@ -1,7 +1,9 @@
 let answer = 0;
+let count = 0;
 
 function restart(){
-    answer = Math.floor(Math.random()*100);
+    answer = Math.floor(Math.random()*100) + 1;
+    count = 0;
     document.getElementById("result").innerHTML = "";
     document.getElementById("num").value = "";
 }
@@ -18,9 +20,19 @@ function judge(){
     if (a == answer){
         document.getElementById("result").innerHTML = 
         "正解！<br><div style='text-align:center;'><img src='正解.png' id='seikai'></div>";
+        return;
+        
+    }else{
+        count++;
 
+    if (count >=10){
+        window.alert("10回間違えました！やり直してください！")
+        return;
+    }
 
-    } else if ((a - answer <= 10) && (a - answer >= -10)){
+}
+
+    if ((a - answer <= 10) && (a - answer >= -10)){
           if (a < answer){
         document.getElementById("result").innerHTML = 
         "10以内！もっと大きい！<br><div style='text-align:left;'><img src='sankaku.png' id='sankaku'></div>";
@@ -41,4 +53,3 @@ function judge(){
 }
 
 restart();
-
