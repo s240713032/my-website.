@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけんゲーム</title>
+<script src="janken.js">
+</script>
+
+<link rel="stylesheet" href="./default.css">
+<style>
+body {
+    background-image: url("haikei.png");
+    color: #fff;
+    
+}
+
+a {
+    color: white;
+}
+
+</style>
+</head>
+<body>
+<h1>じゃんけんゲーム</h1>
+ルール：
+シンプルなじゃんけんゲームである。
+<br>注意として、ゲームスタートボタンを押さないと選択できないのでゲームスタートボタンを押してから始めて下さい。
+<br>制限時間は5秒です。また、再戦する際もゲームスタートボタンを押してリスタートしてください。
+<br>
+
+<hr>
+<button onclick="init()">ゲームスタート</button>
+<br>
+じゃんけんの手を選択してください
+<input type="radio" name="jk" value="0" disabled>グー
+<input type="radio" name="jk" value="1" disabled>チョキ
+<input type="radio" name="jk" value="2" disabled>パー
+
+<button onclick="judge()">OK</button>
+<p>時間：<span id="counter">0</span></p>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
+
+<span id="result"></span>
+<br>
+<br>
+<br>
+<a href="kadai.html">前のページに戻る</a>
+</body>
+</html>

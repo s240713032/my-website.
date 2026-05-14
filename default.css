@@ -61,6 +61,21 @@ body {
   height: 200px; 
 }
 
+#kachi{
+  width: 400px;
+  height: 500px;
+}
+
+#make{
+  width: 400px;
+  height: 500px;
+}
+
+#hikiwake{
+  width: 400px;
+  height: 500px;
+}
+
 h2 {
   border-width: 2px 2px 2px 5px;  
   border-style: solid;
