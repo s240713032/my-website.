@@ -110,3 +110,45 @@ h4 {
 footer {
   clear: both;
 }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td{
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+#board{
+  margin: auto;
+}
+
+#suna button{
+  margin-left: 80px;
+}
+
+#suna img{
+  margin-left: 80px;
+}
+
+#kabe1 button{
+  margin-left: 80px;
+}
+
+#kabe1 img{
+  margin-left: 80px;
+}
+
+#kabe2 button{
+  margin-left: 80px;
+}
+
+#kabe2 img{
+  margin-left: 80px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>マップエディタ</title>
+    <link rel="stylesheet" href="./default.css">
+    <script src="mapEdit.js" type="text/javascript"></script>
+</head>
+
+<body onload="init()">
+    <h1>マップエディタ</h1>
+
+
+    <h4>　工夫した点としてはまず、マップの大きさを大・中・小から選択できるようにした。
+        <br>　また、壁か砂を選択することができ、好きなタイルに切り替えられるようにした。</h4>
+
+    <button onclick="setSize(8)">小</button>
+    <button onclick="setSize(14)">中</button>
+    <button onclick="setSize(20)">大</button>
+
+        
+    <br><br>
+    <h4 id="count">砂 × 0 壁1 × 0 壁2 × 0</h4>
+
+    <table id="board"></table>
+
+    <h2 id="info" style="display:none;"></h2>
+
+    
+
+    <br>
+
+
+    <div id="suna">
+        <img src="chipD.png">
+        <button onclick="selectTile('chipD.png')">砂</button>
+        
+    </div>
+
+    <br>
+
+    <div id="kabe1">
+        <img src="kabe1.png">
+        <button onclick="selectTile('kabe1.png')">壁1</button>
+        <br>
+    </div>
+
+<br>
+
+    <div id="kabe2">
+        <img src="kabe2.png">
+        <button onclick="selectTile('kabe2.png')">壁2</button>
+        <br>
+    </div>
+
+    <a href="kadai.html">前のページに戻る</a>
+
+</body>
+</html>
