@@ -155,3 +155,8 @@ img{
 a{
     color: white;
 }
+
+canvas{
+  display: block;
+  margin: 0 auto;
+}
