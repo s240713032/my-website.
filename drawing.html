@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>
+タッチした場所への描画
+</title>
+<link rel="stylesheet" href="./default.css">
+</head>
+<body onload="init()">
+    <h1>描画</h1>
+    <h4>　画面上をタッチすることで、自由に絵を描画することができます。下の色変更ボタンからペンを好きな色に変更することができます。
+        また、スライダーを利用することで、ペンの太さを自由に変更することができます。
+        初期のペンの色は緑色です。
+    <br>　
+    </h4>
+<canvas id="canvas" width="320" height="480"></canvas>
+<script src="drawing.js" type="text/javascript">
+</script>
+
+<div>
+<button onclick="changeColor('red')"> 赤 </button>
+<button onclick="changeColor('orange')"> 橙 </button>
+<button onclick="changeColor('yellow')"> 黄 </button>
+<button onclick="changeColor('green')">緑</button>
+<button onclick="changeColor('skyblue')">水色</button>
+<button onclick="changeColor('blue')">青</button>
+<button onclick="changeColor('purple')">紫</button>
+<button onclick="changeColor('black')">黒</button>
+</div>
+
+<br>
+
+<input type="range" id="slider" min="1" step="1" max="30" value="3"><br>
+<label for="slider">線の太さ</label>
+
+
+
+
+
+<br><br>
+<br><br>
+<br><br>
+    
+    <a href="kadai.html">前のページに戻る</a>
+
+<br>
+</body>
+</html>
