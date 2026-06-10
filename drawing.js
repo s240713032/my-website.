@@ -29,7 +29,7 @@ function touchStart(event)
     if (event.touches.length > 1)
         size = event.touches.length * 2;
     old_x = event.touches[0].pageX;
-    old_y = event.touches[0].pageY;
+    old_y = event.touches[0].pageY - canvas.offsetTop;
 }
 
 //function drawCcl(x,y,r,color)
@@ -49,7 +49,7 @@ function touchMove(event)
     let c_y;
     event.preventDefault();
     c_x = event.touches[0].pageX;
-    c_y = event.touches[0].pageY;
+    c_y = event.touches[0].pageY - canvas.offsetTop;
     drawLine(old_x, old_y, c_x, c_y, size, pencolor);
     old_x = c_x;
     old_y = c_y;
