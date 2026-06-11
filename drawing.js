@@ -42,7 +42,6 @@ function touchStart(event)
 //}
 
 
-
 function touchMove(event)
 {
     let c_x;
@@ -59,6 +58,12 @@ function changeColor(color)
 {
     pencolor = color;
 }
+
+function changeCanvasColor(color)
+{
+    canvas.style.backgroundColor = color;
+}
+
 
 function drawLine(x1, y1, x2, y2, psize, color)
 {

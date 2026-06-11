@@ -19,6 +19,8 @@
 <script src="drawing.js" type="text/javascript">
 </script>
 
+<br>
+<p>ペンの色
 <div>
 <button onclick="changeColor('red')"> 赤 </button>
 <button onclick="changeColor('orange')"> 橙 </button>
@@ -31,9 +33,16 @@
 </div>
 
 <br>
+<p>キャンパスの色
+<br>
+<button onclick="changeCanvasColor('pink')">ピンク</button>
+<button onclick="changeCanvasColor('black')">黒</button>
+<button onclick="changeCanvasColor('white')">白</button>
 
-<input type="range" id="slider" min="1" step="1" max="30" value="3"><br>
+<br>
+<br>
 <label for="slider">線の太さ</label>
+<input type="range" id="slider" min="1" step="1" max="30" value="3"><br>
 
 <br>
 <button onclick="oChange()">リセット</button>
