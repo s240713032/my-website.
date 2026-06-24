@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dungeon2</title>
+        <link rel="stylesheet" href="./dungeon.css">
+    </head>
+
+    <body onload="init()">
+        <h1>ダンジョン</h1>
+        <h4>画面右下の黄色い部分がゴールです。ゴールを目指してヒーローを進めてください。また、Changeボタンを押すことで
+        <br>迷路の床や壁のデザインを変更することができ、RESTARTボタンを押すとヒーローが初期位置に戻ります。
+        <br>
+        </h4>
+        <br>
+        <button onclick="Change()">Change</button>
+        <button onclick="Restart()">RESTART</button>
+        <br>
+        <br>
+        <canvas id="maze" width="900" height="600"></canvas>
+        <script src="dungeon2.js" type="text/javascript"></script>
+        <img id="hero0" src="hero0.png" style="display: none">
+        <img id="hero1" src="hero1.png" style="display: none">
+        <img id="hero2" src="hero2.png" style="display: none">
+        <img id="hero3" src="hero3.png" style="display: none">
+
+
+        <br>
+        <a href="kadai.html">前のページに戻る</a>
+    </body>
+</html>

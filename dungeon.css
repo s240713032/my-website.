@@ -36,3 +36,9 @@ body {
     height: 600px;
     touch-action: none;
 }
+
+h4 {
+    border: dotted 2px lightyellow;
+    background-color: midnightblue;
+    padding: 10px;
+}
