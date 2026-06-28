@@ -115,9 +115,7 @@ function repaint(){
         }
     }
     player.paint(ctx, 0, 0, 16, 16)
-    ctx.fillStyle = "gold";
     ctx.restore();
-    ctx.fillRect(goal.x*16, goal.y*16, 16, 16);
 }
 
 //主人公オブジェクトコンストラクタ
@@ -161,7 +159,7 @@ function Player(x, y){
     this.paint = function (gc, x, y, w, h){
         let img = document.getElementById("hero" + this.dir);
         //gc.drawImage(img, x, y, w, h); //教科書
-        gc.drawImage(img, this.x*16, this.y*16, 16, 16);
+        gc.drawImage(img, this.x*16, this.y*16, w, h);
     };
 }
 
@@ -179,24 +177,4 @@ function mykeyup(e){
 }
 
 
-function Change(){
-    if(change == 0){
-        floor.src = "kori.png";
-        wall.src = "yuki.png"
-        change = 1;
-    }else{
-        floor.src = "chipA.png";
-        wall.src = "kabe1.png"
-        change = 0;
-    }
 
-    repaint();
-}
-
-function Restart(){
-    clearInterval(timer);
-    player.x = 1;//左上(0,0)
-    player.y = 1;
-    timer = setInterval(tick, 200);
-    repaint();
-}
