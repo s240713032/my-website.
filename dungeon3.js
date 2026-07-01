@@ -208,6 +208,7 @@ function Restart(){
     clearInterval(timer);
     player.x = 1;//左上(0,0)
     player.y = 1;
+    Keycode = 0;
     timer = setInterval(tick, 200);
     repaint();
 }
